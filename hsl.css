@@ -1,7 +1,7 @@
 body {
   background-color: #1c1c1c;
   color: #fff;
-  font-family: 'Oswald', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
   text-align: center;
 }
 
@@ -11,6 +11,7 @@ body {
   box-shadow: 2px 0px 10px 2px rgba(0, 0, 0, 0.25);
   padding: 20px;
   margin: 50px auto;
+  width: 100%;
   width: 400px;
 }
 
@@ -30,19 +31,21 @@ body {
 }
 
 h1 {
-  font-family: 'Oswald', sans-serif;
-  font-size: 32px;
-  font-weight: bold;
+  font-family: 'BlinkMacSystemFont', sans-serif;
+  font-weight: bolder; 
+  font-size: 30px;
+
 }
 
 P {
-  font-family: 'Oswald', sans-serif;
-  font-size: 24px;
+  font-family: 'BlinkMacSystemFont', sans-serif;
+  font-weight: bolder; 
+  font-size: 22px;
 }
 
 .total {
-  font-size: 30px;
-  font-weight: bold;
+  font-size: 26px;
+  font-weight: normal;
   color: #00CC00;
 }
 
@@ -53,7 +56,7 @@ P {
 
 .fines {
   font-size: 30px;
-  font-weight: bold;
+  font-weight: normal;
   color: #ff6666;
 }
 
@@ -84,4 +87,15 @@ button:hover {
   margin-top: 30px;
   background-color: transparent;
   color: #5e5e5e;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 480px) {
+.container {
+width: 90%;
+}
+button {
+padding: 8px 15px;
+font-size: 14px;
+}
 }
